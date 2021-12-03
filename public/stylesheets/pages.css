@@ -1,0 +1,108 @@
+.table {
+    width: 100%;
+}
+
+.table__head {
+    text-align: left;
+}
+
+.table__body {
+    text-align: left;
+}
+
+.table__row {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.table__body > .table__row {
+    border-top: 2px solid #e6e6e6;
+    background-color: var(--color-grey);
+}
+
+.table__body > .table__row:hover {
+    background-color: #d2cfcf   ;
+
+}
+
+.table__body > .table__row:first-child {
+    border-top: 3px solid #e6e6e6;
+}
+
+.table__tag {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.table__tag-home {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.table__tag-edit > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--color-link);
+}
+
+.table__tag-delete {
+
+    color: var(--color-danger);
+    font-size: 18px;
+    font-weight: normal;
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

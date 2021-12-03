@@ -1,0 +1,51 @@
+.active {
+    color: var(--color-header-hover)!important;
+    background-color: #080808;
+}
+
+
+
+.header {
+    background-color: var(--color-background);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item {
+    float: left;
+    list-style: none;
+}
+
+.navbar__list::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.navbar__item > a, 
+.navbar-brand {
+    color: var(--color-header);
+    padding: 12px 24px;
+    font-size: 17px;
+    line-height: 23px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar__item > a:hover,
+.navbar-brand:hover {
+    color: var(--color-header-hover);
+}
+
+
+
+
+
+
+
+
+
+

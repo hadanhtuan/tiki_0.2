@@ -1,0 +1,63 @@
+A slug is the part of a URL that identifies a particular page on a website in an easy-to-read form.
+
+replace() trả về chuỗi mới với các chuỗi khớp với biểu thức chính quy được thay thế bằng chuỗi truyền vào
+
+/biểu thức chính quy/cờ
+cờ i: tìm kiếm không phân biệt hoa thường
+cờ g: tìm kiếm toàn chuỗi
+
+Dấu cộng cho biết một hoặc nhiều lần xuất hiện của phần tử trước. Ví dụ: /ab + c/ khớp với "abc", "abbc", "abbbc", v.v., nhưng không phải là "ac".
+
+
+const abc = {
+    'id[]': [1,2,3] 
+}
+console.log(abc['id[]'])
+console.log(abc['id[]'][1])
+
+jquery: thao tác dom tốt nhưng làm trang web chậm, tải lâu
+
+Sửa đổi kéo thả bảng rồi cập nhật vào csdl:
+
+để kéo thả bảng thì dùng sortable trong jquery, trong update của sortable sau khi thay đổi thì gửi request tới url yêu cầu
+    thông qua $.port(url, data). url là url request post, data là list các id. Sau khi server nhận được list các id thì cập nhật lại
+    chỉ số sorting tăng dần theo thứ tự.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
