@@ -5,18 +5,18 @@
     
     <thead class="table__head">
         <tr class="table__row row">
-            <th class="table__tag col l-5">Title</th>
-            <th class="table__tag col l-3">Edit</th>
-            <th class="table__tag col l-4">Delete</th>
+            <th class="table__tag col-md-5">Title</th>
+            <th class="table__tag col-md-3">Edit</th>
+            <th class="table__tag col-md-4">Delete</th>
         </tr>
     </thead>
     
     <tbody class="table__body">
         <% pages.forEach( page => { %> 
             <tr id="id_<%= page._id %>" class="<%= page.slug %> table__row row"> 
-                <td class="table__tag-home col l-5"><%= page.title %></td> 
-                <td class="table__tag-edit col l-3"><a href="/admin/pages/<%= page.slug %>edit">Edit</a></td> 
-                <td class="table__tag-delete col l-4"><%- include('../partials/deleteForm', {
+                <td class="table__tag-home col-md-5"><%= page.title %></td> 
+                <td class="table__tag-edit col-md-3"><a href="/admin/pages/<%= page.slug %>edit">Edit</a></td> 
+                <td class="table__tag-delete col-md-4"><%- include('../partials/deleteForm', {
                     url: `/admin/pages/${page.slug}`
                 }) %></td> 
             </tr> 

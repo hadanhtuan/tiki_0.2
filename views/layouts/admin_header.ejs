@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="/stylesheets/main.css">
     <link rel="stylesheet" href="/stylesheets/pages.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="/stylesheets/bootstrap/css/bootstrap.min.css">
+
+    <script src="/stylesheets/bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <header class="header">
-        <div class="navbar grid wide">
+        <div class="navbar">
             <a href="" class="navbar-brand">Tiki</a>
             <ul class="navbar__list">
                 <li class="navbar__item"><a class="active" href="#">Home</a></li>
@@ -23,7 +28,7 @@
 
     <%- messages('messages', locals) %>
     
-    <div class="grid wide">
+    <div class="container">
         <%- include('../partials/error_messages')  %>
     
 

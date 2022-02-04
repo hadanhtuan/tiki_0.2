@@ -1,7 +1,6 @@
 @import 'shared/variables.css';
-@import 'shared/grid.css';
 @import 'shared/header.css';
-@import 'shared/form.css';
+@import 'bootstrap';
 
 
 
@@ -29,14 +28,6 @@ html {
     border-radius: 4px;
     cursor: pointer;
     outline: none;
-}
-
-.alert-danger {
-    font-size: 16px;
-    padding: 10px;
-    margin-bottom: 3px;
-    background-color: var(--color-background-danger);
-    color: var(--color-danger);
 }
 
 
