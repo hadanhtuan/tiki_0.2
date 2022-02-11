@@ -6,20 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="/stylesheets/pages.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="/stylesheets/bootstrap/css/bootstrap.min.css">
+
+    <script src="/stylesheets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="navbar grid wide">
-            <a href="" class="navbar-brand">Tiki</a>
-            <ul class="navbar__list">
-                <li class="navbar__item"><a class="active" href="#">Home</a></li>
-                <li class="navbar__item"><a href="#">About</a></li>
-                <li class="navbar__item"><a href="#">Contact</a></li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- <a href="" class="navbar-brand">Tiki</a> -->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="active nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <%- messages('messages', locals) %>
+    
+    <div class="container">
+        <%- include('../partials/messages')  %>
+
 
 
 

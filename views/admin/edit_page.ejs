@@ -1,10 +1,11 @@
 <%- include('../layouts/admin_header') %>
 
-    <h1 class="padding-tb-15">Add a page</h1>
+    <h1 class="padding-tb-15">Edit page</h1>
 
     <a href="/admin/pages" class="btn btn-primary">Back to all pages</a>
 
-    <form action="/admin/pages/add-page" method="POST" class="padding-tb-15">
+
+    <form action="/admin/pages/edit-page/<%= _id %>" method="POST" class="padding-tb-15">
         
         <div class="form-group">
             <label class="form-label" for="text">Title</label>
@@ -21,7 +22,7 @@
             <textarea class="form-control form-textarea" type="text" name="content" placeholder="content"><%= content %></textarea>
         </div>
         
-        <button class="btn btn-default padding-10">Submit</button>
+        <button class="btn btn-primary padding-10">Submit</button>
     </form>
 
 

@@ -1,0 +1,18 @@
+<% if (locals.messages != null) { %>
+    <%  messages.forEach(message => { %>
+            <p class="alert alert-<%= message.type %>"><%= message.msg %></p>
+    <% }) %>
+<% } %>
+
+
+
+
+
+
+
+
+
+
+
+
+

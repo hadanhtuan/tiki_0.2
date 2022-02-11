@@ -20,7 +20,7 @@ app.use(express.static('public'))
 mongoose.connect(config.databases)
 
 // Set global errors variable
-app.locals.errors = null;
+// app.locals.messages = null;
 
 //router
 const pagesRouter = require('./routes/pages')
@@ -34,20 +34,20 @@ app.use(bodyParser.json())
 //set method override
 app.use(methodOverride('_method'))
 
-//express session middleware
-app.use(session({
-    secret: 'keyboard cat',
-    resave: false,
-    saveUninitialized: true,
-    cookie: { secure: true }
-  }))
+// //express session middleware
+// app.use(session({
+//     secret: 'keyboard cat',
+//     resave: false,
+//     saveUninitialized: true,
+//     cookie: { secure: true }
+//   }))
 
-//express message middleware
-app.use(require('connect-flash')());
-app.use(function (req, res, next) {
-  res.locals.messages = require('express-messages')(req, res);
-  next();
-});
+// //express message middleware
+// app.use(require('connect-flash')());
+// app.use(function (req, res, next) {
+//   res.locals.messages = require('express-messages')(req, res);
+//   next();
+// });
 
 //express validator middleware
 app.use(expressValidator({
@@ -73,7 +73,6 @@ app.use('/', pagesRouter)
 //start the server
 const port = 3000
 app.listen(port, () => {})
-
 
 
 

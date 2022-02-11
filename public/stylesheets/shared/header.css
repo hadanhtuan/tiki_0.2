@@ -1,15 +1,13 @@
 .active {
-    color: var(--color-header-hover)!important;
-    background-color: #080808;
+    color: white!important;
+    background-color: black;
 }
-
-
 
 .header {
     background-color: var(--color-background);
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     align-items: center;
 }
@@ -38,7 +36,7 @@
 .navbar__item > a:hover,
 .navbar-brand:hover {
     color: var(--color-header-hover);
-}
+} */
 
 
 

@@ -1,6 +1,9 @@
 <%- include('../layouts/admin_header') %>
 
 <h1 class="padding-tb-15">Pages</h1>
+
+<a href="/admin/pages/add-page" class="btn btn-primary">Add a new page</a>
+
 <table class="table table-striped sorting">
     
     <thead class="table__head">
@@ -15,9 +18,9 @@
         <% pages.forEach( page => { %> 
             <tr id="id_<%= page._id %>" class="<%= page.slug %> table__row row"> 
                 <td class="table__tag-home col-md-5"><%= page.title %></td> 
-                <td class="table__tag-edit col-md-3"><a href="/admin/pages/<%= page.slug %>edit">Edit</a></td> 
+                <td class="table__tag-edit col-md-3"><a href="/admin/pages/edit/<%= page.slug %>">Edit</a></td> 
                 <td class="table__tag-delete col-md-4"><%- include('../partials/deleteForm', {
-                    url: `/admin/pages/${page.slug}`
+                    url: `/admin/pages/${page._id}`
                 }) %></td> 
             </tr> 
         <% }) %>
