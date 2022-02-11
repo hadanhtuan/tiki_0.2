@@ -1,0 +1,43 @@
+<%- include('../layouts/admin_header') %>
+
+    <h1 class="padding-tb-15">Edit category</h1>
+
+    <a href="/admin/categories" class="btn btn-primary">Back to all categories</a>
+
+
+    <form action="/admin/categories/edit-category/<%= _id %>" method="POST" class="padding-tb-15">
+        
+        <div class="form-group">
+            <label class="form-label" for="text">Title</label>
+            <input class="form-control" type="text" name="title" placeholder="title" value="<%= title %>">    
+        </div>
+        
+        <button class="btn btn-primary padding-10">Submit</button>
+    </form>
+
+
+
+
+
+<%- include('../layouts/admin_footer') %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

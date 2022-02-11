@@ -25,6 +25,7 @@ mongoose.connect(config.databases)
 //router
 const pagesRouter = require('./routes/pages')
 const adminPagesRouter = require('./routes/admin_pages')
+const adminCategoriesRouter = require('./routes/admin_categories')
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -68,6 +69,7 @@ app.use(expressValidator({
 }))
 
 app.use('/admin/pages', adminPagesRouter)
+app.use('/admin/categories', adminCategoriesRouter)
 app.use('/', pagesRouter)
 
 //start the server

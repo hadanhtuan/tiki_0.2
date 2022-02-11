@@ -179,7 +179,8 @@ router.delete('/:id', async (req, res) => {
     
     try {
         await Page.findByIdAndDelete(req.params.id)
-        messages.push('success', 'Page deleted')
+        messages.push({type: 'success', msg: 'Page deleted'})
+        console.log(messages)
         
         const pages = await Page.find({}).sort({sorting: 1})
         res.render('admin/pages', {
@@ -188,7 +189,7 @@ router.delete('/:id', async (req, res) => {
         })
     }
     catch {
-        messages.push('danger', 'Can not delete page')
+        messages.push({type: 'danger', msg: 'Can not delete page'})
         res.render('/', {
             messages: messages
         })

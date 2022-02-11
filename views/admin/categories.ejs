@@ -1,0 +1,50 @@
+<%- include('../layouts/admin_header') %>
+
+<h1 class="padding-tb-15">Categories</h1>
+
+<a href="/admin/categories/add-category" class="btn btn-primary">Add a new category</a>
+
+<table class="table table-striped sorting">
+    
+    <thead class="table__head">
+        <tr class="table__row row">
+            <th class="table__tag col-md-5">Title</th>
+            <th class="table__tag col-md-3">Edit</th>
+            <th class="table__tag col-md-4">Delete</th>
+        </tr>
+    </thead>
+    
+    <tbody class="table__body">
+        <% categories.forEach( cat => { %> 
+            <tr class="table__row row"> 
+                <td class="table__tag-home col-md-5"><%= cat.title %></td> 
+                <td class="table__tag-edit col-md-3"><a href="/admin/categories/edit/<%= cat._id %>">Edit</a></td> 
+                <td class="table__tag-delete col-md-4"><%- include('../partials/deleteForm', {
+                    url: `/admin/categories/${cat._id}`
+                }) %></td> 
+            </tr> 
+        <% }) %>
+    </tbody>
+</table>
+
+
+
+
+<%- include('../layouts/admin_footer') %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
